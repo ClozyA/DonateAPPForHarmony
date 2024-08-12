@@ -1,0 +1,160 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "MyAppUserName",
+      "value": "用户名"
+    },
+    {
+      "name": "PasswordPlaceholder",
+      "value": "请输入密码"
+    },
+    {
+      "name": "UserNamePlaceholder",
+      "value": "请输入用户名"
+    },
+    {
+      "name": "Login",
+      "value": "登录"
+    },
+    {
+      "name": "Register",
+      "value": "注册"
+    },
+    {
+      "name": "LoginButtonText",
+      "value": "立即登录"
+    },
+    {
+      "name": "LoginErrorTitle",
+      "value": "错误"
+    },
+    {
+      "name": "LoginErrorMessage",
+      "value": "登录失败！"
+    },
+    {
+      "name": "LoginErrorButtonText",
+      "value": "确定"
+    },
+    {
+      "name": "LoginError",
+      "value": "登录失败！"
+    },
+    {
+      "name": "ForgetPassword",
+      "value": "忘记密码"
+    },
+    {
+      "name": "Home",
+      "value": "首页"
+    },
+    {
+      "name": "Mine",
+      "value": "我的"
+    },
+    {
+      "name": "Donate",
+      "value": "捐助"
+    },
+    {
+      "name": "DonateIsland",
+      "value": "捐助岛"
+    },
+    {
+      "name": "GoToRegister",
+      "value": "去注册"
+    },
+    {
+      "name": "GoToLogin",
+      "value": "去登录"
+    },
+    {
+      "name": "RegisterNow",
+      "value": "立即注册"
+    },
+    {
+      "name": "PasswordConfirmPlaceholder",
+      "value": "请重新输入密码"
+    },
+    {
+      "name": "ReturnToLogin",
+      "value": "返回登录页面"
+    },
+    {
+      "name": "RegisterButtonText",
+      "value": "立即注册"
+    },
+    {
+      "name": "RegisterFailed",
+      "value": "用户名或密码不能为空！"
+    },
+    {
+      "name": "OK",
+      "value": "我知道了"
+    },
+    {
+      "name": "PasswordNotMatch",
+      "value": "两次密码不一致！请检查后重新提交"
+    },
+    {
+      "name": "RegisterSuccess",
+      "value": "注册成功！即将返回登录页面"
+    },
+    {
+      "name": "LoginOutButtonText",
+      "value": "退出登录"
+    },
+    {
+      "name": "LoginOut",
+      "value": "登出成功，即将返回登录页面！"
+    },
+    {
+      "name": "ForgetPasswordInputPlaceholder",
+      "value": "请输入新密码"
+    },
+    {
+      "name": "ResetPasswordButtonText",
+      "value": "修改密码"
+    },
+    {
+      "name": "ResetPasswordSuccess",
+      "value": "密码修改成功！"
+    },
+    {
+      "name": "EmptyUsernameOrPasswordInput",
+      "value": "用户名和密码不能为空！"
+    },
+    {
+      "name": "BackToLogin",
+      "value": "返回登录页面"
+    },
+    {
+      "name": "hot_text",
+      "value": "热门捐赠"
+    },
+    {
+      "name": "recent_text",
+      "value": "近期捐赠"
+    },
+    {
+      "name": "PleaseInputDonateAmount",
+      "value": "请输入金额"
+    },
+    {
+      "name": "PleaseInputDonateItem",
+      "value": "请输入捐款物资"
+    }
+  ]
+}
