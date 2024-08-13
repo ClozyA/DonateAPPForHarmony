@@ -246,6 +246,8 @@ export default struct TestDialog {
             AlertDialog.show({
               message: "感谢您的支持"
             })
+
+
             // router.pushUrl({
             //   url: 'pages/Index'
             // })

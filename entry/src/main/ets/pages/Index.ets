@@ -3,10 +3,13 @@ import { router } from '@kit.ArkUI'
 import NewSliderbar from '../componet/DonateComponets'
 import IslandComponets from '../componet/IslandComponets'
 import DonateComponets from '../componet/DonateComponets'
+import Mine from '../componet/Mine'
+import nav from '../mockjs/nav'
 
 @Entry
 @Component
 struct Index {
+  @State mynav_switch: number = 0
   @State tabicons: Array<Resource> =
     [
       $r("app.media.planetoutline"),
@@ -25,16 +28,16 @@ struct Index {
   @Builder
   customTabs(index: number) {
     Column() {
-      Image(this.tabicons[index])
+      Image(this.mynav_switch == index ? nav[index].selectedIcon : nav[index].icon)
         .width(35)
         .height(35)
-        .fillColor(Color.Gray)
+        .fillColor(this.mynav_switch == index ?Color.Red :Color.Gray)
         .margin({
           bottom: 5
         })
-      Text(this.tabtexts[index])
+      Text(nav[index].mytxt)
         .fontSize(12)
-        .fontColor(Color.Gray)
+        .fontColor(this.mynav_switch == index ? nav[index].selectedColor : nav[index].color)
     }
   }
 
@@ -60,11 +63,13 @@ struct Index {
         }.tabBar(this.customTabs(2))
 
         TabContent() {
-          Text("我的").fontSize(50)
+          Mine()
 
         }.tabBar(this.customTabs(3))
 
-      }
+      }.onChange((index)=>{
+        this.mynav_switch = index
+      })
     }
 
   }
