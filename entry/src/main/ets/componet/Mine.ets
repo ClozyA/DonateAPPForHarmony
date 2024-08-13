@@ -64,7 +64,7 @@ export default struct Mine {
           Image($r("app.media.bankcardbg2"))
             .backgroundImageSize(ImageSize.Auto)
             .height('210vp')
-            .width('340vp')
+            .width('360vp')
             .borderRadius(30)
             .margin({
               top: 10
@@ -81,6 +81,7 @@ export default struct Mine {
                 Image($r("app.media.bankcardlogo"))
                   .width(60)
                   .height(60)
+                  .margin({ top: '0.00vp', right: '0.00vp', bottom: '0.00vp', left: '10.00vp' })
               }
               .width('60.00vp')
 
@@ -93,11 +94,13 @@ export default struct Mine {
                   .width("50%")
                   .height(30)
                   .fontWeight(FontWeight.Bold)
+                  .margin({ top: '0.00vp', right: '0.00vp', bottom: '0.00vp', left: '5.00vp' })
                 Text("China Construction Bank")
                   .fontSize(20)
                   .width('80.00%')
                   .height(30)
                   .fontWeight(FontWeight.Bold)
+                  .margin({ top: '0.00vp', right: '0.00vp', bottom: '0.00vp', left: '5.00vp' })
               }
               .height('60.00vp')
 
@@ -121,6 +124,7 @@ export default struct Mine {
                   left: '10.00vp'
                 })
             }
+            .margin({ top: '0.00vp', right: '0.00vp', bottom: '0.00vp', left: '10.00vp' })
 
             Flex({
               justifyContent: FlexAlign.End,
