@@ -298,8 +298,10 @@ export default struct IslandComponets {
             .borderRadius(20)
             .textAlign(TextAlign.Center)
             .onClick(() => {
-              this.give_num++
-              this.customDialog.open();
+              if(this.donationAmount !="" || this.donationItem !=""){
+                this.give_num++
+                this.customDialog.open();
+              }
             })
         }
       }

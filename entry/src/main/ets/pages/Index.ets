@@ -5,6 +5,9 @@ import IslandComponets from '../componet/IslandComponets'
 import DonateComponets from '../componet/DonateComponets'
 import Mine from '../componet/Mine'
 import nav from '../mockjs/nav'
+import CarSideBar from '../componet/CarSideBar'
+import CartSideBar from '../componet/CartSideBar'
+import MyIsland from '../componet/MyIsland'
 
 @Entry
 @Component
@@ -58,7 +61,7 @@ struct Index {
         }.tabBar(this.customTabs(1))
 
         TabContent() {
-          IslandComponets()
+          MyIsland()
 
         }.tabBar(this.customTabs(2))
 
