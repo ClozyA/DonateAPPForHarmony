@@ -4,6 +4,7 @@
     "pages/Start",
     "pages/Login",
     "pages/Register",
-    "pages/ForgetPassword"
+    "pages/ForgetPassword",
+    "pages/IslandComponets"
   ]
 }

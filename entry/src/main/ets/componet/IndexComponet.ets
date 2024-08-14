@@ -193,9 +193,6 @@ export default struct IndexComponet {
       }
 
     }
-    .margin({
-      top: 10
-    })
   }
 }
 

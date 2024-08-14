@@ -3,10 +3,10 @@ import TestDialog from './TestDialog'
 @Preview
 @Component
 export default struct AnalyseComponent {
-  @State give_num: number = 0
-  @State donationAmount: string = ""
-  @State donationItem: string = "不捐赠物资"
-  @State love_numbers: number = 32164
+  @Prop give_num: number = 0
+  @Prop donationAmount: string = ""
+  @Prop donationItem: string = "不捐赠物资"
+  @Prop love_numbers: number = 32164
   private customDialog: CustomDialogController = new CustomDialogController({
     builder: TestDialog({
       give_sub_num: this.give_num,
@@ -23,13 +23,14 @@ export default struct AnalyseComponent {
       alignItems: ItemAlign.Center,
     }) {
       Text("捐钱：" + this.donationAmount + "，捐赠物品：" + this.donationItem)
-        .fontSize(20)
+        .fontSize(18)
         .fontColor(Color.Black)
+        .height(30)
 
       Button("捐赠")
         .width("20%")
-        .fontSize(20)
-        .height(40)
+        .fontSize(15)
+        .height(20)
         .backgroundColor(Color.Red)
         .onClick(() => {
           if (this.donationAmount != "" || this.donationItem != "") {

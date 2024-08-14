@@ -1,13 +1,9 @@
 import IndexComponet from '../componet/IndexComponet'
-import { router } from '@kit.ArkUI'
-import NewSliderbar from '../componet/DonateComponets'
-import IslandComponets from '../componet/IslandComponets'
 import DonateComponets from '../componet/DonateComponets'
 import Mine from '../componet/Mine'
 import nav from '../mockjs/nav'
-import CarSideBar from '../componet/CarSideBar'
-import CartSideBar from '../componet/CartSideBar'
 import MyIsland from '../componet/MyIsland'
+import { Header } from '../componet/Header'
 
 @Entry
 @Component
@@ -34,7 +30,7 @@ struct Index {
       Image(this.mynav_switch == index ? nav[index].selectedIcon : nav[index].icon)
         .width(35)
         .height(35)
-        .fillColor(this.mynav_switch == index ?Color.Red :Color.Gray)
+        .fillColor(this.mynav_switch == index ? Color.Red : Color.Gray)
         .margin({
           bottom: 5
         })
@@ -51,26 +47,58 @@ struct Index {
         barPosition: BarPosition.End,
       }) {
         TabContent() {
-          IndexComponet()
+          Flex({
+            direction: FlexDirection.Column,
+          }) {
+            Header({
+              isIndex: false,
+              title: "首页"
+            })
+            IndexComponet()
+          }
 
         }.tabBar(this.customTabs(0))
 
         TabContent() {
-          DonateComponets()
+          Flex({
+            direction: FlexDirection.Column,
+          }) {
+            Header({
+              isIndex: false,
+              title: "捐助"
+            })
+            DonateComponets()
+          }
 
         }.tabBar(this.customTabs(1))
 
         TabContent() {
-          MyIsland()
+          Flex({
+            direction: FlexDirection.Column,
+          }) {
+            Header({
+              isIndex: false,
+              title: "捐助岛"
+            })
+            MyIsland()
+          }
 
         }.tabBar(this.customTabs(2))
 
         TabContent() {
-          Mine()
+          Flex({
+            direction: FlexDirection.Column,
+          }) {
+            Header({
+              isIndex: false,
+              title: "我的"
+            })
+            Mine()
+          }
 
         }.tabBar(this.customTabs(3))
 
-      }.onChange((index)=>{
+      }.onChange((index) => {
         this.mynav_switch = index
       })
     }

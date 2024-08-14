@@ -1,4 +1,5 @@
 import Goods from '../data/Goods'
+import { router } from '@kit.ArkUI'
 
 @Component
 export default struct RightSideBar {
@@ -45,7 +46,14 @@ export default struct RightSideBar {
           }
         }
 
-      }
+      }.onClick(() => {
+        router.pushUrl({
+          url: 'pages/IslandComponets',
+          params: {
+            item: this.myitem
+          }
+        })
+      })
     }
   }
 }

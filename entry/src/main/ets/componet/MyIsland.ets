@@ -36,6 +36,7 @@ export default struct MyIsland {
       }.margin({
         bottom:20
       })
+      .height('480vp')
 
       Text("你可能感兴趣的")
         .fontSize(18)
